@@ -5,7 +5,7 @@ Given the project's requirement for the use of a web framework in TypeScript, th
 
 This marks my first-time using TypeScript, and have been enjoying it. The learning curve to me is steady as I already have experience with React using JavaScript. 
 The concepts I struggled in was the types/interfaces + the use of services.
-![Sketch](https://imgur.com/eaxHYXK)
+![Sketch](https://i.imgur.com/eaxHYXK.jpg)
 This was the initial plan I had sketched out. I had also planned to integrate with GoogleMaps, and possibly a "favourites" list keeping track of communities saved for later in a cookie. 
 Like any other project, I underestimated the implementation time and did not have a chance to do these.
 
