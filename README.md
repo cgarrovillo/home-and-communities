@@ -12,6 +12,7 @@ Like any other project, I underestimated the implementation time and did not hav
 The time constraint was definitely a huge factor, which is pretty similar to my schoolwork given the scale. If I was given more time, I'd definitely approach this project differently:
 - Project Requirements
   - I'd like to gather the tone I want to convey to the public. Is this to appeal to customers or to be used as a dashboard by a broker? Customer sided gives me more creative freedom & a dashboard type would mean more functionality & faster fetching.
+  - Mobile first approach
 - Dataset information
   - How many communities & homes are there?
 - Implementation
