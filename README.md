@@ -1,44 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Home and Communities
+This is the repository for my solution to the Frontend Coding Exercise for OpenHouse.AI
 
-## Available Scripts
+Given the project's requirement for the use of a web framework in TypeScript, this implementation took me longer than I initially thought as I had to work-around some challenges and conflicts.
 
-In the project directory, you can run:
+This marks my first-time using TypeScript, and have been enjoying it. The learning curve to me is steady as I already have experience with React using JavaScript. 
+The concepts I struggled in was the types/interfaces + the use of services.
+![Sketch](https://imgur.com/eaxHYXK)
+This was the initial plan I had sketched out. I had also planned to integrate with GoogleMaps, and possibly a "favourites" list keeping track of communities saved for later in a cookie. 
+Like any other project, I underestimated the implementation time and did not have a chance to do these.
 
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The time constraint was definitely a huge factor, which is pretty similar to my schoolwork given the scale. If I was given more time, I'd definitely approach this project differently:
+- Project Requirements
+  - I'd like to gather the tone I want to convey to the public. Is this to appeal to customers or to be used as a dashboard by a broker? Customer sided gives me more creative freedom & a dashboard type would mean more functionality & faster fetching.
+- Dataset information
+  - How many communities & homes are there?
+- Implementation
+  - I would implement the data validation fully (across all properties)
+  - Faster algorithms for the iterations & sorting; again depending on the dataset
