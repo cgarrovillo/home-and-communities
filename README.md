@@ -17,3 +17,4 @@ The time constraint was definitely a huge factor, which is pretty similar to my 
 - Implementation
   - I would implement the data validation fully (across all properties)
   - Faster algorithms for the iterations & sorting; again depending on the dataset
+- Third party feedback
