@@ -1,7 +1,8 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Route, Switch } from 'react-router-dom'
 import Community from './Community'
 import CommunitiesService from '../services/CommunitiesService'
+import CommunitySummary from './Home';
 
 export default function Communities() {
     const communities = CommunitiesService();
@@ -20,10 +21,6 @@ export default function Communities() {
                         {communities.map(c => (
                             <Community community={c} />
                         ))}
-                    </div>
-
-                    <div className="sidebar">
-
                     </div>
                 </div>
             </div>

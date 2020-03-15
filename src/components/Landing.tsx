@@ -5,9 +5,9 @@ function Landing() {
     return (
         <section className="content-container">
             <div id="landing__title">
-                <h1 >Houses & Communities</h1>
-                <div className="landing__ctas">
-                    <Link to="/communities" className="button button-lg" href="#">Browse Communities</Link>
+                <h1 >Home & Communities</h1>
+                <div id="landing__ctas">
+                    <Link to="/communities" className="button button-lg">Browse Communities</Link>
                 </div>
             </div>
         </section>

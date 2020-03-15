@@ -18,11 +18,14 @@
   --fs-body: 1rem;
   --fs-btn-lg: 1rem;
 
-  --clr-primary: #D2A49B;
+  --clr-primary: #D9A091;
   --clr-light: #fff;
   --clr-dark: #303030;
+  --clr-grey: #F8F8F8;
+  --clr-green: #0ca597;
 
   --bs-bottom: 0 0.25em 0.75em rgba(0, 0, 0, .25), 0 0.125em 0.25em rgba(0, 0, 0, .25);
+  --bs-bottom-2: 0 0.15em 0.75em rgba(0, 0, 0, .25), , 0 0.125em 0.25em rgba(0, 0, 0, .25);
   --bs-bottom-inset: inset 0 0.25em 0.75em rgba(0, 0, 0, .25), 0 0.125em 0.25em rgba(0, 0, 0, .25);
 }
 
@@ -73,8 +76,8 @@ h4 {
 /* Sections */
 .section-navbar {
   width: 100%;
-  background-color: var(--clr-light);
-  padding: 1em;
+  background-color: var(--clr-primary);
+  padding: 1em 2em 1em 4em;
   box-shadow: var(--bs-bottom);
 }
 .section-navbar a {
@@ -92,35 +95,85 @@ h4 {
 /* Community */
 .communities h2 {
   font-weight: var(--fw-bold);
+  text-align: center;
+  margin: 1em;
 }
 
 .communities-list {
-  width: 50%;
-  padding: 2em 0 2em 0;
+  width: 100%;
+  margin: 2em 0 2em 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .community {
-  border: 0.50px var(--clr-dark) solid;
-  border-radius: 10px;
-  margin: 1em;
-  padding: 1em;
-
+  flex-basis: 360px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
+  margin: 1em;
+
+  color: var(--clr-prim);
+
+  border: 0px;
+  border-radius: 10px;
+  padding: 1em;
 }
+.community:hover{
+  /* background-color: var(--clr-grey); */
+  transition: 0.5s;
+  box-shadow: var(--bs-bottom);
+}
+.community:hover > .community__homes{
+  visibility: visible;
+  min-height: 0;
+  width: 100%;
+  animation: fadeDropdown 0.5s;
+}
+@keyframes fadeDropdown {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
 .community h3 {
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: normal;
+  text-align: center;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  max-width: 320px;
+  margin: 0.50em 0 0.25em 0;
 }
 .community h4 {
-  font-weight: var(--fw-thin);
+  font-weight: 400;
+  color: var(--clr-green);
+  text-align: center;
+  padding: 0 0 0.50em 0;
 }
-
 
 .community img {
   max-height: 200px;
+  width: 320px;
 }
 
+.community__homes {
+  visibility: hidden;
+  border: 0;
+}
+
+.home {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 95px 80px 110px;
+}
 
 /* Landing page */
 #landing__title {
@@ -133,4 +186,11 @@ h4 {
   font-weight: var(--fw-bold);
   line-height: normal;
   margin: 0 0 44px 0;
+}
+
+#landing__ctas a:hover{
+  background-color: var(--clr-light);
+  border: 0.8px solid var(--clr-primary);
+  color: var(--clr-primary);
+  transition: 0.3s;
 }

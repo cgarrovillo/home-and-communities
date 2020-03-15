@@ -17,7 +17,10 @@ export default function CommunitiesService() {
     communities.sort((a, b) => a.name.localeCompare(b.name));
     communities.map(community => {
         community.homes = homes.filter(home => community.id === home.communityId);
-        community.avgPrice = getAvgPrice(community);
+        if (community.homes.length === 0)
+            community.avgPrice = "Price Range Not Available"
+        else
+            community.avgPrice = getAvgPrice(community);
     })
     return communities;
 }
@@ -25,8 +28,10 @@ export default function CommunitiesService() {
 /**
  * Gets the average price of all homes in a community
  * @param community The community Object containing an array of Homes
+ * @returns {priceText} The price of the homes in the community
  */
 function getAvgPrice(community: CommunityInterface) {
+
     let priceText = "";
     const sum = community.homes.reduce((avg, home) => avg + home.price, 0);
     const avg = sum / community.homes.length;
@@ -37,7 +42,6 @@ function getAvgPrice(community: CommunityInterface) {
         priceText = "High $" + avgDisplay + "'s";
     }
     else {
-        // avg = Math.floor(avg);
         priceText = "Low $" + avgDisplay + "'s";
     }
 
