@@ -5,7 +5,7 @@ import Communities from './components/Communities'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/home-and-communities">
       <Switch>
         <Route exact path="/">
           <Landing />

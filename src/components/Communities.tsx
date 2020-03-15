@@ -6,7 +6,6 @@ import CommunitySummary from './Home';
 
 export default function Communities() {
     const communities = CommunitiesService();
-    console.log(communities)
 
     return (
         <section>
