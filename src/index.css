@@ -66,6 +66,7 @@ h4 {
 .button {
   background-color: var(--clr-primary);
   color: var(--clr-light);
+  min-width: min-content;
 }
 
 .button-lg {
@@ -161,7 +162,7 @@ h4 {
 
 .community img {
   max-height: 200px;
-  width: 320px;
+  /* width: 320px; */
 }
 
 .community__homes {

@@ -14,7 +14,7 @@ export default function Communities() {
                 <NavLink to="/">H&C</NavLink>
             </div>
             <div className="content-container communities">
-                <h2>Communities</h2>
+                <h2 className="d-flex justify-content-center">Communities</h2>
 
                 <div className="community-content">
                     <div className="communities-list">
